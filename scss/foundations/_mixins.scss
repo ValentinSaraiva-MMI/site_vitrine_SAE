@@ -1,0 +1,68 @@
+@mixin only-small {
+    @media screen and (max-width: $small) {
+        @content;
+    }
+}
+
+@mixin only-medium {
+    @media screen and (min-width: ($small + 1px)) and (max-width: $large) {
+        @content;
+    }
+}
+
+@mixin medium-up {
+    @media screen and (min-width: ($small + 1px)) {
+        @content;
+    }
+}
+
+@mixin large-up {
+    @media screen and (min-width: ($medium + 1px)) {
+        @content;
+    }
+}
+
+@mixin x-large-up {
+    @media screen and (min-width: ($large + 1px)) {
+        @content;
+    }
+}
+
+
+
+@mixin h1 {
+    font-size: $giant-font-size;
+    font-weight: $font_weight-bold;
+}
+
+@mixin h2 {
+    font-size: $bigger-font-size;
+    font-weight: $font_weight-bold;
+}
+
+@mixin h3 {
+    font-size: $big-font-size;
+    font-weight: $font_weight-bold;
+}
+
+@mixin h4 {
+    font-size: $medium-font-size;
+    font-weight: $font_weight-bold;
+}
+
+@mixin h5 {
+    font-size: $regular-font-size;
+    font-weight: $font_weight-semibold;
+}
+
+
+@mixin p1 {
+    font-size: $regular-font-size;
+    font-weight: $font_weight-medium;
+    line-height: 1.25;
+}
+
+@mixin p2 {
+    font-size: $small-font-size;
+    font-weight: $font_weight-regular;
+}
