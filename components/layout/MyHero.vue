@@ -3,6 +3,12 @@
 <div v-for="element in elements">
 <PrismicRichText :field="element.groupe_texte"/>
 
+<IconsLogoFacebook/>
+<IconsLogoInstagram/>
+<IconsLogoSae/>
+<IconsLogoX/>
+<IconsLogoTwitch/>
+
 
 </div>
 
