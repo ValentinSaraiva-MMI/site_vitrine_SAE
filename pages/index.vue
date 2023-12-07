@@ -1,16 +1,43 @@
 <template>
 <h1>hello</h1>
-<h2 class="test">test</h2>
+<!-- <h2 class="test">test</h2> -->
+
+<Hero :elements="accueil.data.groupe"/>   
+
+
+
+
+
+<!-- <prismic-rich-text :field="accueil.texte" /> -->
 
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 .test {
     text-align: center;
-  color: $primary-color;
+  color: $color-main;
 }
 
 </style>
 
-<script></script>
+<script setup>
+
+const { client } = usePrismic();
+const { data: accueil } = await useAsyncData('accueil', () => client.getSingle('accueil'))
+
+// console.log(accueil.data.texte)
+
+
+// const { data: home, error } = await useAsyncData("home", () =>
+//   client.getSingle("accueil")
+// );
+
+// if (!home.value || error.value) {
+//   throw createError({
+//     statusCode: 404,
+//     statusMessage: "la page d\accueil est introuvable",
+//   });
+// }
+
+</script>

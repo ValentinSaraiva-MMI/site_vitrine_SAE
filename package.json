@@ -16,6 +16,8 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@nuxtjs/prismic": "^3.1.0",
+    "prismic-nuxt": "^0.5.3",
     "sass": "^1.69.5"
   }
 }

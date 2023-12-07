@@ -2,6 +2,13 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
+modules: [
+'@nuxtjs/prismic',
+],
+
+
+ prismic: {
+   endpoint: process.env.NUXT_PRISMIC_ENDPOINT },
 
 
   css: [
@@ -16,7 +23,7 @@ export default defineNuxtConfig({
         additionalData: `
         @import "@/scss/foundations/_variables.scss";
         @import "@/scss/foundations/_mixins.scss";
-        @import "@/scss/foundations/_fonctions.scss";
+       
         `
       }
     }
