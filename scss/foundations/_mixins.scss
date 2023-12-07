@@ -1,68 +1,93 @@
-@mixin only-small {
-    @media screen and (max-width: $small) {
+@mixin small {
+    @media screen and (max-width: $sm) {
         @content;
     }
 }
 
-@mixin only-medium {
-    @media screen and (min-width: ($small + 1px)) and (max-width: $large) {
+@mixin medium {
+    @media screen and (min-width: $md) {
         @content;
     }
 }
 
-@mixin medium-up {
-    @media screen and (min-width: ($small + 1px)) {
+@mixin large {
+    @media screen and (min-width: $lg) {
         @content;
     }
 }
 
-@mixin large-up {
-    @media screen and (min-width: ($medium + 1px)) {
+@mixin xlarge{
+    @media screen and (min-width: $xl) {
         @content;
     }
 }
 
-@mixin x-large-up {
-    @media screen and (min-width: ($large + 1px)) {
+@mixin xxlarge {
+    @media screen and (min-width: $xl2) {
         @content;
     }
 }
 
 
-
-@mixin h1 {
-    font-size: $giant-font-size;
-    font-weight: $font_weight-bold;
+@mixin h1{
+    font-family: $font-title;
+    font-size: $mobile-font_extra;
+    text-transform: uppercase;
+    
+    @include medium {
+        font-size: $pc-font_extra;
+    }
 }
 
-@mixin h2 {
-    font-size: $bigger-font-size;
-    font-weight: $font_weight-bold;
-}
+@mixin h2{
+    font-family: $font-title;
+    font-size: $mobile-font_mega;
+    text-transform: uppercase;
 
-@mixin h3 {
-    font-size: $big-font-size;
-    font-weight: $font_weight-bold;
-}
-
-@mixin h4 {
-    font-size: $medium-font-size;
-    font-weight: $font_weight-bold;
-}
-
-@mixin h5 {
-    font-size: $regular-font-size;
-    font-weight: $font_weight-semibold;
+    @include medium {
+        font-size: $pc-font_mega;
+    }
 }
 
 
-@mixin p1 {
-    font-size: $regular-font-size;
-    font-weight: $font_weight-medium;
-    line-height: 1.25;
-}
-
-@mixin p2 {
-    font-size: $small-font-size;
+@mixin p{
+    font-family: $font-texte;
+    font-size: $mobile-font_regular;
     font-weight: $font_weight-regular;
+
+    @include medium {
+        font-size: $pc-font_regular;
+    }
+}
+
+@mixin bouton{
+    font-family: $font-title;
+    font-size: $mobile-font_regular;
+    text-transform: uppercase;
+
+    @include medium {
+        font-size: $pc-font_regular;
+    }
+}
+
+@mixin bouton_big{
+    font-size: $mobile-font_semibig;
+    
+    @include medium {
+        font-size: $pc-font_semibig;
+    }
+}
+
+@mixin card_title{
+    font-family: $font-title;
+    font-size: $mobile-font_big;
+    text-transform: uppercase;
+    
+    @include medium {
+        font-size: $pc-font_big;
+    }
+}
+
+@mixin teste{
+    border: 2px solid red;
 }

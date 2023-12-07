@@ -1,67 +1,44 @@
-@import 'fonctions';
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Gothic+A1:wght@400;800&family=Montserrat:wght@400;500;600;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+// couleurs
+$color-main: #1CCCE9;
+$color-main_darken: #14A1B8;
+$color-white: #F5F5F5;
+$color-white_darken: #CDCDCD;
+$color-gray: #949494;
+$color-gray_darken: #2B2E34;
+$color-black: #191C23;
 
+// taille texte
+$pc-font_regular: 1rem;
+$pc-font_semibig: 1.25rem;
+$pc-font_big: 2rem;
+$pc-font_mega: 3rem;
+$pc-font_extra: 4rem;
 
-$primary-color: #f48e28;
-$secondary-color: #f5ddc4;
+$mobile-font_regular: 0.75rem;
+$mobile-font_semibig: 1rem;
+$mobile-font_big: 1.5rem;
+$mobile-font_mega: 2rem;
+$mobile-font_extra: 3rem;
 
-$white: #fff;
-$gray: #b6b6b6;
-$black: #000;
-$red : #EE140A;
-$gris: #B6B6B6;
-
-
-
-$small-font-size: rem(13);
-$regular-font-size: rem(18);
-$medium-font-size: rem(26);
-$big-font-size: rem(36);
-$bigger-font-size: rem(48);
-$giant-font-size: rem(95);
-
-
-$primary-font-familly: 'Montserrat', sans-serif;
-
-// style texte
+// gras texte
 $font_weight-regular: 400;
-$font_weight-medium: 500;
-$font_weight-semibold: 600;
-$font_weight-bold: 700;
+$font_weight-bold: 800;
 
-// media queries
-$small: 600px;
-$medium: 760px;
-$large: 960px;
+// familles texte
+$font-title: 'Fugaz One', sans-serif;
+$font-texte: 'Gothic A1', sans-serif;
 
+// marges
+$m-small: 20px;
+$m-litle: 25px;
+$m-medium: 50px;
+$m-big: 100px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// j'ai envie de marier Rose 
-
-//j'ai réussi ! 
+// media query / tailles d'écrans
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+$xl2: 1536px;
