@@ -3,6 +3,10 @@
 
  <MyHero :elements="accueil.data.hero"/>
 
+  <sectionAPropos/>
+
+  <myFooter/>
+
 </template>
 
 <style lang="scss" scoped>
