@@ -3,7 +3,15 @@
 
  <MyHero :elements="accueil.data.hero"/>
 
- <sponsors/>
+
+
+  <sectionRegles class="my_section"/>
+
+  <sectionSponsors/>
+
+  <sectionAPropos/>
+
+  <myFooter/>
 
 </template>
 

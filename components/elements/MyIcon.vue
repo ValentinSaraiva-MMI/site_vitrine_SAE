@@ -7,7 +7,7 @@
   </i>
 </template>
 
-
+ 
 <style lang="scss" scoped>
 .icon {
   display: inline-flex;
