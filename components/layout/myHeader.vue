@@ -10,8 +10,8 @@
             <ul>
                 <li><RouterLink to="/">Accueil</RouterLink></li>
                 <li><RouterLink to="/">Historique</RouterLink></li>
-                <li><RouterLink to="/">Règles</RouterLink></li>
-                <li><RouterLink to="/">FAQ</RouterLink></li>
+                <li><RouterLink to="/regles">Règles</RouterLink></li>
+                <li><RouterLink to="/foire-aux-questions">FAQ</RouterLink></li>
                 <li><RouterLink to="/">à Propos & Contact</RouterLink></li>
             </ul>
         </nav>
@@ -47,8 +47,8 @@
                     <ul>
                         <li><myButton url="/" @click="menuOuvert = !menuOuvert">Accueil</myButton></li>
                         <li><myButton url="/" @click="menuOuvert = !menuOuvert">Historique</myButton></li>
-                        <li><myButton url="/" @click="menuOuvert = !menuOuvert">Règles</myButton></li>
-                        <li><myButton url="/" @click="menuOuvert = !menuOuvert">FAQ</myButton></li>
+                        <li><myButton url="/regles" @click="menuOuvert = !menuOuvert">Règles</myButton></li>
+                        <li><myButton url="/foire-aux-questions" @click="menuOuvert = !menuOuvert">FAQ</myButton></li>
                         <li><myButton url="/" @click="menuOuvert = !menuOuvert">Contact</myButton></li>
                     </ul>
                 </nav>

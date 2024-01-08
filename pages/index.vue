@@ -3,6 +3,8 @@
 
  <MyHero :elements="accueil.data.hero"/>
 
+  <sectionRegles class="my_section"/>
+
   <sectionAPropos/>
 
   <myFooter/>
