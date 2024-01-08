@@ -3,6 +3,8 @@
 
  <MyHero :elements="accueil.data.hero"/>
 
+ <sponsors/>
+
 </template>
 
 <style lang="scss" scoped>
