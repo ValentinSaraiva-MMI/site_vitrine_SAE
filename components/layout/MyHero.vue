@@ -144,13 +144,12 @@
     }
 
     &_img{
+
         width: 90%;
-    
-        // margin: auto;
 
                @include medium{
                 width: 100%;
-        
+
     }
 
      

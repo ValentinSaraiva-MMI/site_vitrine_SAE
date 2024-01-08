@@ -1,17 +1,16 @@
+
 <template>
 
 
  <MyHero :elements="accueil.data.hero"/>
 
-
-
   <sectionRegles class="my_section"/>
 
-  <sectionSponsors/>
+    <sectionSponsors/>
 
   <sectionAPropos/>
 
-  <myFooter/>
+
 
 </template>
 
