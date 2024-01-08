@@ -1,13 +1,7 @@
 <template>
-<h1>hello</h1>
-<!-- <h2 class="test">test</h2> -->
 
 
-
- <LayoutMyHero :elements="accueil.data.groupe"/>
-
-
- 
+ <MyHero :elements="accueil.data.hero"/>
 
 </template>
 
@@ -15,7 +9,7 @@
 
 .test {
     text-align: center;
-  color: $color-main;
+    color: $color-main;
 }
 
 </style>

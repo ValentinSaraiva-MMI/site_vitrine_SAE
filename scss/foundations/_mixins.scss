@@ -16,7 +16,7 @@
     }
 }
 
-@mixin xlarge{
+@mixin xlarge {
     @media screen and (min-width: $xl) {
         @content;
     }
@@ -29,18 +29,19 @@
 }
 
 
-@mixin h1{
+@mixin h1 {
     font-family: $font-title;
     font-size: $mobile-font_extra;
     text-transform: uppercase;
-    
+
     @include medium {
         font-size: $pc-font_extra;
     }
 }
 
-@mixin h2{
+@mixin h2 {
     font-family: $font-title;
+
     font-size: $mobile-font_mega;
     text-transform: uppercase;
 
@@ -50,7 +51,7 @@
 }
 
 
-@mixin p{
+@mixin p {
     font-family: $font-texte;
     font-size: $mobile-font_regular;
     font-weight: $font_weight-regular;
@@ -60,7 +61,7 @@
     }
 }
 
-@mixin bouton{
+@mixin bouton {
     font-family: $font-title;
     font-size: $mobile-font_regular;
     text-transform: uppercase;
@@ -70,24 +71,24 @@
     }
 }
 
-@mixin bouton_big{
+@mixin bouton_big {
     font-size: $mobile-font_semibig;
-    
+
     @include medium {
         font-size: $pc-font_semibig;
     }
 }
 
-@mixin card_title{
+@mixin card_title {
     font-family: $font-title;
     font-size: $mobile-font_big;
     text-transform: uppercase;
-    
+
     @include medium {
         font-size: $pc-font_big;
     }
 }
 
-@mixin teste{
+@mixin teste {
     border: 2px solid red;
 }

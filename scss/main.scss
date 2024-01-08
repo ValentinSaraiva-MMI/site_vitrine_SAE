@@ -34,6 +34,10 @@ h3 {
     @include card_title;
 }
 
+p {
+    @include p;
+}
+
 .bleu {
     color: $color-main;
 }
@@ -47,9 +51,9 @@ button {
         padding: $m-big;
     }
 
-    h1 {
-        margin-bottom: $m-big;
-    }
+    // h1 {
+    //     margin-bottom: $m-big;
+    // }
 
     h2 {
         margin-bottom: $m-medium;
