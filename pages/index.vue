@@ -6,6 +6,8 @@
 
   <sectionRegles class="my_section"/>
 
+  <sectionBuvetteChill/>
+
     <sectionSponsors/>
 
   <sectionAPropos/>
