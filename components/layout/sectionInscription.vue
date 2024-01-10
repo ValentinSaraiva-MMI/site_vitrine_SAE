@@ -127,33 +127,14 @@
             &_joueur{
                 justify-content: start;
                 align-items: flex-start;
-                flex: 1 1 60%;
-
-                &-bouton{
-                    margin-top: 30px;
-                }
-
             }
 
             &_benevole{
                 justify-content: end;
                 align-items: flex-end;
-                flex: 1 1 40%;
-                background: rgba($color-main, 20%);
-
-                
-                &-bouton{
-                    margin-top: 20px;
-                }
 
                 &:hover{
                     flex: 1 1 66%;
-
-                    .section_inscription-image_benevole-titre{
-                        color: red;
-                        @include h2
-                    }
-
                 }
             }
         }
