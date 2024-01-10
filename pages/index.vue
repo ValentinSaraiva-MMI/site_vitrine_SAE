@@ -8,7 +8,9 @@
 
   <sectionBuvetteChill/>
 
-    <sectionSponsors/>
+  <sectionInscription/>
+
+  <sectionSponsors/>
 
   <sectionAPropos/>
 
