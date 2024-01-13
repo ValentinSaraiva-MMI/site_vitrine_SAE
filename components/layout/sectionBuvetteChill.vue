@@ -1,6 +1,6 @@
 <template>
 
-<section>
+<section class="my_section">
 
   <h2><span class="bleu">lE COIN CHILL</span> et la buvette </h2>
 
@@ -13,7 +13,6 @@
 
         <div class="tkt">
 
-   
     <prismic-rich-text class="zoneChill_texte" :field="chillbuvette.data.chill_texte" />
 
      <ul class="zoneChill_jeux">
@@ -54,7 +53,7 @@
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    margin-top: -75px;
+    // margin-top: -75px;
     z-index: -1;
     position: relative;
 
@@ -68,9 +67,29 @@
         width: 100%;
         max-height: 248px;
         object-fit: cover;
+        
+
+        // width: 100%;
+        // aspect-ratio: 16/9;
+        // object-fit: cover;
+        // border: red solid 2px;
 
         @include medium {
-         
+        max-height: 473px;
+         width: 691px;
+              border: pink solid 2px ;
+        }
+
+        @include large {
+        max-height: 350px;
+         width: 48vw;
+          border: green solid 2px ;
+        }
+
+        @include xlarge {
+        max-height: 473px;
+         width: 48vw;
+        border: red solid 2px ;
         }
          
     }
@@ -79,9 +98,38 @@
         width: 80vw;
         padding: $m-small;
         background-color: $color-gray_darken;
+       
+        
+
 
         @include medium {
-            width: 41vw;
+            position: relative;
+            right: 35px;
+            width: 30vw;
+            background-color: red;
+            padding-top: 11%;
+        }
+        
+        @include large {
+            position: relative;
+            right: 35px;
+            width:  33vw;
+            height: 184px;          
+            background-color: pink;
+            padding-top: 7%;
+            
+
+        }
+
+
+        @include xlarge {
+            position: relative;
+            right: 35px;
+             width:  40vw;
+            height: 230px;          
+            background-color: rgb(90, 12, 247);
+            padding-top: 11%;
+            
         }
 
     }
@@ -92,9 +140,14 @@
         // justify-content: center;
 
     display: flex;
-    flex-wrap: wrap;  
+    // flex-wrap: wrap;  
     justify-content: space-around;  
     gap: 24px;
+
+
+    // @include medium {
+    //     marg
+    // }
       
         &_item {
         margin-top: 15px;
@@ -102,6 +155,20 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+
+  @include medium {
+                width: 70px;
+                
+              
+            }
+
+            @include large {
+                width: 90px;
+                height: 140px;
+              
+            }
+
         }
       
     }
@@ -115,7 +182,7 @@
     align-items: center;
     gap: 15px;
 
-     @include medium {
+     @include medium { 
        flex-direction: row-reverse;
        margin-top: 0;
        justify-content: center;
@@ -124,7 +191,7 @@
 
     &_image {
         width: 100%;
-        max-height: 248px;
+        max-height: 394px;
         object-fit: cover;
 
         @include medium {
@@ -142,10 +209,10 @@
 
         @include medium {
         padding: $m-medium;
-        background-color: $color-gray_darken;
+        background-color: red;
         position: relative;
         left: 9vw;   
-         width: 41vw;
+         width: 50vw;
         }
 
     }
@@ -156,7 +223,8 @@
 
 .tkt {
     @include medium {
-    //  display: flex;
+    width: 40%;
+    height: 248px;
     }
 }
 
