@@ -7,7 +7,6 @@
         <nav class="footer_pages">
             <ul>
                 <li><RouterLink to="/">Accueil</RouterLink></li>
-                <li><RouterLink to="/historique">Historique</RouterLink></li>
                 <li><RouterLink to="/regles">Règles</RouterLink></li>
                 <li><RouterLink to="/foire-aux-questions">FAQ</RouterLink></li>
                 <li><RouterLink to="/">à propos & contact</RouterLink></li>
@@ -16,7 +15,7 @@
 
         <nav class="footer_icons">
             <ul>
-                <li><myIcon name="instagram" color="white" cercle="true" url="https://www.instagram.com/smash_arena_event"/></li>
+                <li><myIcon name = "instagram" color="white" cercle="true" url="https://www.instagram.com/smash_arena_event"/></li>
                 <li><myIcon name = "x" cercle="true" url="https://twitter.com/SmashArenaEvent"/></li>
                 <li><myIcon name = "facebook" cercle="true" url="https://www.facebook.com/people/Smash-Arena-Event/61553864250828"/></li>
             </ul>

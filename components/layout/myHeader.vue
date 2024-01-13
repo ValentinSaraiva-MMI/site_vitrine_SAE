@@ -9,10 +9,9 @@
         <nav class="header-pc_page">
             <ul>
                 <li><RouterLink to="/">Accueil</RouterLink></li>
-                <li><RouterLink to="/">Historique</RouterLink></li>
                 <li><RouterLink to="/regles">Règles</RouterLink></li>
                 <li><RouterLink to="/foire-aux-questions">FAQ</RouterLink></li>
-                <li><RouterLink to="/">à Propos & Contact</RouterLink></li>
+                <li><RouterLink to="/"  >à Propos & Contact</RouterLink></li>
             </ul>
         </nav>
 
@@ -23,7 +22,6 @@
                 <li><MyIcon url="https://www.instagram.com/smash_arena_event" color="white"/></li>
                 <li><MyIcon url="https://twitter.com/SmashArenaEvent" name = "x"/></li>
                 <li><MyIcon url="https://www.facebook.com/people/Smash-Arena-Event/61553864250828/" name = "facebook"/></li>
-                <li><MyIcon url="/" name = "twitch"/></li>
             </ul>
         </nav>
     </header>
@@ -46,7 +44,6 @@
                 <nav class="header-mobile_page-nav">
                     <ul>
                         <li><myButton url="/" @click="menuOuvert = !menuOuvert">Accueil</myButton></li>
-                        <li><myButton url="/" @click="menuOuvert = !menuOuvert">Historique</myButton></li>
                         <li><myButton url="/regles" @click="menuOuvert = !menuOuvert">Règles</myButton></li>
                         <li><myButton url="/foire-aux-questions" @click="menuOuvert = !menuOuvert">FAQ</myButton></li>
                         <li><myButton url="/" @click="menuOuvert = !menuOuvert">Contact</myButton></li>
