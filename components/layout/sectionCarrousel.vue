@@ -1,7 +1,7 @@
 <template>
     <section class="my_section section_carrousel">
         <h2 class="bleu section_carrousel-titre">Smash Arena Event</h2>
-
+        
         <swiper-container
             :slides-per-view="1"
             :space-between="spaceBetween"
@@ -17,14 +17,14 @@
 
             <swiper-slide v-for="c in carrousel.data.carrousel_item">
                 <PrismicImage class="carrousel_img" :field="c.carrousel_img" />
-                <PrismicText class="h2 carrousel_titre" :field="c.carrousel_titre" /> 
-                <PrismicText class="carrousel_texte" :field="c.carrousel_texte" /> 
+                <PrismicRichText class="h2 carrousel_titre" :field="c.carrousel_titre" /> 
+                <PrismicRichText class="carrousel_texte" :field="c.carrousel_texte" /> 
             </swiper-slide>
 
         </swiper-container>
     </section>
 </template>
-  
+
 <style lang="scss">
 
 .section_carrousel{
@@ -64,12 +64,14 @@
                 padding: $m-small $m-litle;
                 background: $color-gray_darken;
 
-                ::first-letter{
-                    color: red;
+                strong {
+                    font-weight: $font_weight-bold;
+                    color: $color-main;
                 }
 
-                strong {
-                    color: $color-main;
+                ul{
+                    padding-left: $m-small;
+                    list-style: inside;
                 }
             }
         }
