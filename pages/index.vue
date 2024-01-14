@@ -2,7 +2,9 @@
 <template>
 
 
- <MyHero :elements="accueil.data.hero"/>
+  <MyHero :elements="accueil.data.hero"/>
+
+  <sectionCarrousel/>
 
   <sectionRegles class="my_section"/>
 
