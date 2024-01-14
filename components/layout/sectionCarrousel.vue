@@ -117,7 +117,7 @@ import { register } from 'swiper/element/bundle';
 register();
 
 export default {
-    setup(){
+    data(){
         const onProgress = (e) => {
             const [swiper, progress] = e.detail;
             // console.log(progress)
