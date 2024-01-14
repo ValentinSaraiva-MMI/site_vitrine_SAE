@@ -4,7 +4,7 @@
         
         <swiper-container
             :slides-per-view="1"
-            :space-between="spaceBetween"
+            space-between=10
             :centered-slides="true"
             navigation="true" 
             @swiperprogress="onProgress"
@@ -118,7 +118,6 @@ register();
 
 export default {
     setup(){
-        const spaceBetween = 10;
         const onProgress = (e) => {
             const [swiper, progress] = e.detail;
             // console.log(progress)
@@ -129,7 +128,6 @@ export default {
         }
 
         return {
-            spaceBetween,
             onProgress,
             onSlideChange,
         };
