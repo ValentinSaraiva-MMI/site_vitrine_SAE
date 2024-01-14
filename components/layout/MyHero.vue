@@ -172,7 +172,7 @@
 const { client } = usePrismic();
 const { data: accueil } = await useAsyncData('accueil', () => client.getSingle('accueil'))
 
-console.log(accueil)
+// console.log(accueil)
 
 const props =defineProps ({
     elements: Array

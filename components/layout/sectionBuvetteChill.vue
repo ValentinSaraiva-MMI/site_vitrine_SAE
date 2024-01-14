@@ -242,6 +242,6 @@ const { client } = usePrismic();
 
 const { data: chillbuvette } = await useAsyncData('chillbuvette', () => client.getSingle('chillbuvette'))
 
-console.log(chillbuvette);
+// console.log(chillbuvette);
 
 </script>

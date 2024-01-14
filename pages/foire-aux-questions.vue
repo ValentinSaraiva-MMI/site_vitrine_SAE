@@ -14,7 +14,7 @@
                 class="faq_section"
                 v-for="(faq_section, index) in numberOfSections" :key="index">
 
-            <PrismicText class="h2" :field="faq.data[`partie_titre_${index+1}`]" /> 
+            <PrismicRichText class="h2 faq_section-titre" :field="faq.data[`partie_titre_${index+1}`]" /> 
 
             <ul class="faq_section-liste">
                 <li class="faq_section-liste-item" v-for="(question, index) in faq.data[`question_${index+1}`]" :key="index">
@@ -51,6 +51,12 @@
 
     &_section{
         padding: $m-medium 0;
+
+        &-titre{
+            strong{
+                color: $color-main
+            }
+        }
 
         // l'enemble des questions
         &-liste{
