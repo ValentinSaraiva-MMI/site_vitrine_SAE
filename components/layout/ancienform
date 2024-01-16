@@ -1,0 +1,30 @@
+
+        <form action="https://api.web3forms.com/submit" class="mr-auto mt-7 ml-auto w-[90%] max-w-screen-xl lg:mt-[67px]"
+          method="POST">
+
+
+          <div class="-mx-3 mb-6 flex flex-wrap">
+            <div class="mb-6 w-full px-3 md:mb-0 md:w-1/2">
+              <input type="text" placeholder="Nom "
+                class="form-control mt-2 mb-3 block w-full py-3 px-4 leading-tight text-white" name="nom" required />
+            </div>
+
+            <div class="w-full px-3 md:w-1/2">
+              <input type="email" class="form-control mt-2 mb-3 block w-full py-3 px-4 leading-tight text-white"
+                placeholder="Email " name="email" required />
+            </div>
+          </div>
+
+          <div class="-mx-3 mb-2 flex flex-wrap">
+            <textarea placeholder="Détailles de projet " rows="1" class="form-control mx-3 block w-full p-2.5 text-white"
+              name="message" required></textarea>
+          </div>
+
+        
+
+          
+            <myButton class="hero_btn" url="/" size="big"  color="blue">Envoyer</myButton>
+
+
+      
+        </form>

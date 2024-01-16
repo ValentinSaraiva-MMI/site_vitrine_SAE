@@ -50,6 +50,7 @@
         }
     }
     
+    
     &.-blue{
         background: $color-main;
         color: $color_white;

@@ -1,41 +1,35 @@
-
 <template>
+  <MyHero :elements="accueil.data.hero" />
 
+  <sectionCarrousel />
 
-  <MyHero :elements="accueil.data.hero"/>
+  <sectionRegles class="my_section" />
 
-  <sectionCarrousel/>
+  <sectionBuvetteChill />
 
-  <sectionRegles class="my_section"/>
+  <sectionInscription />
 
-  <sectionBuvetteChill/>
+  <sectionSponsors />
 
-  <sectionInscription/>
+  <sectionAPropos />
 
-  <sectionSponsors/>
-
-  <sectionAPropos/>
-
-
-
+  <sectionContact />
 </template>
 
 <style lang="scss" scoped>
-
 .test {
-    text-align: center;
-    color: $color-main;
+  text-align: center;
+  color: $color-main;
 }
-
 </style>
 
 <script setup>
-
 const { client } = usePrismic();
-const { data: accueil } = await useAsyncData('accueil', () => client.getSingle('accueil'))
+const { data: accueil } = await useAsyncData("accueil", () =>
+  client.getSingle("accueil")
+);
 
 // console.log(accueil.data.texte)
-
 
 // const { data: home, error } = await useAsyncData("home", () =>
 //   client.getSingle("accueil")
@@ -47,5 +41,4 @@ const { data: accueil } = await useAsyncData('accueil', () => client.getSingle('
 //     statusMessage: "la page d\accueil est introuvable",
 //   });
 // }
-
 </script>
