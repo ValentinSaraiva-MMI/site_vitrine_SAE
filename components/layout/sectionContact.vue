@@ -2,7 +2,17 @@
   <section class="my_section">
     <h2><span class="bleu">nous</span> contacter</h2>
 
-    <form class="formulaire" method="POST">
+    <form
+      class="formulaire"
+      action="https://api.web3forms.com/submit"
+      method="POST"
+    >
+      <input
+        type="hidden"
+        name="access_key"
+        value="2e16caef-865b-4105-80bf-cafccea701be"
+      />
+
       <div class="formulaire_section1">
         <div class="formulaire_section1_div1">
           <input
@@ -36,16 +46,56 @@
       </div>
 
       <div class="formulaire_boutons">
-        <myButton class="hero_btn bouton" url="/" size="big" color="blue"
-          >Envoyer</myButton
+        <button
+          name="redirect"
+          value="https://web3forms.com/success"
+          type="submit"
+          class="banger"
         >
-        <myButton class="hero_btn" url="/" size="big">F.A.Q</myButton>
+          <h6 class="banger-text">Envoyer</h6>
+        </button>
+
+        <myButton class="hero_btn" url="/" size="big">F.A.Q </myButton>
       </div>
     </form>
   </section>
 </template>
 
 <style lang="scss">
+.banger {
+  padding: $m-litle $m-small + 15;
+  min-width: 150px;
+  margin-top: 15px;
+  flex: none;
+  display: inline-flex;
+
+  height: fit-content;
+  transform: skewX(-25deg);
+  text-align: center;
+  background: $color-main;
+  color: $color_white;
+  transition: all 0.1s linear;
+  cursor: pointer;
+
+  &-text {
+    width: 100%;
+    transform: skewX(25deg);
+  }
+
+  &:hover {
+    background: $color-white_darken;
+  }
+
+  @include medium {
+    margin-top: 35px;
+    padding: $m-small $m-small + 10;
+
+    &.-big {
+      padding: $m-litle $m-litle + 15;
+    }
+  }
+}
+
 .formulaire {
   width: 83vw;
   margin: auto;
@@ -92,13 +142,17 @@
       border: none;
       border-bottom: 2px solid #fff;
       color: #fff;
-      border-left: 2px solid #fff;
+
+      @include medium {
+        border-left: 2px solid #fff;
+      }
     }
   }
 
   &_boutons {
     display: flex;
     gap: 20px;
+    align-items: center;
   }
 
   .input2,
@@ -115,5 +169,3 @@
   }
 }
 </style>
-
-<script setup></script>

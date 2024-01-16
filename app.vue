@@ -1,8 +1,7 @@
 <template>
   <div>
-  <MyHeader/>
+    <MyHeader />
     <NuxtPage />
-    <myFooter/>
- 
+    <myFooter />
   </div>
 </template>
