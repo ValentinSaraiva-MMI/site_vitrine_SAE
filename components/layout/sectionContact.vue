@@ -1,6 +1,6 @@
 <template>
   <section class="my_section">
-    <h2><span class="bleu">nous</span> contacter</h2>
+    <h2><span class="bleu">nous</span> contacterr</h2>
 
     <form
       class="formulaire"
