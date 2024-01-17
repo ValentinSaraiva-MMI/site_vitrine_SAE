@@ -48,7 +48,7 @@
       <div class="formulaire_boutons">
         <button
           name="redirect"
-          value="https://web3forms.com/success"
+          value="https://edition2024.smash-arena-event.fr/success"
           type="submit"
           class="banger"
         >
