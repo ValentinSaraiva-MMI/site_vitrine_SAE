@@ -44,7 +44,7 @@
   &_backgroundmobile {
     position: absolute;
     z-index: 0;
-    top: 50%;
+    top: 56%;
     left: 50%;
     transform: translate(-50%, -100%);
 

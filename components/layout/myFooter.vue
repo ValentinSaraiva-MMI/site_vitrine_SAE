@@ -9,9 +9,7 @@
         <li><RouterLink to="/">Accueil</RouterLink></li>
         <li><RouterLink to="/regles">Règles</RouterLink></li>
         <li><RouterLink to="/foire-aux-questions">FAQ</RouterLink></li>
-        <li>
-          <RouterLink to="#section-contact">à propos & contact</RouterLink>
-        </li>
+        <li><RouterLink to="/">à propos & contact</RouterLink></li>
       </ul>
     </nav>
 
@@ -59,7 +57,7 @@
   align-items: center;
   justify-content: space-between;
   gap: $m-litle;
-  width: 100vw;
+  //   width: 100vw;
   height: fit-content;
   padding: $m-litle;
   background: $color-gray_darken;
