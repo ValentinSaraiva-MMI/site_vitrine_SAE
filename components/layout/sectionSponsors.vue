@@ -32,7 +32,7 @@
             flex-wrap: wrap;
             justify-content: space-evenly;
             align-items: center;
-            gap: 5px;
+            gap: $m-small 10px;
             padding: $m-small;
     
             &-item{
@@ -45,6 +45,7 @@
             }
     
             @include medium{
+                gap: $m-medium;
                 padding: $m-medium;
                 
                 &-item{
