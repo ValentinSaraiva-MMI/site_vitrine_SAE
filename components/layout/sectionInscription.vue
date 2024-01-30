@@ -140,7 +140,7 @@
       }
 
       &_benevole {
-        justify-content: end;
+        justify-content: flex-end;
         align-items: flex-end;
 
         &:hover {
