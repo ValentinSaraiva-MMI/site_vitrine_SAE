@@ -11,12 +11,7 @@
         <li><RouterLink to="/">Accueil</RouterLink></li>
         <li><RouterLink to="/regles">Règles</RouterLink></li>
         <li><RouterLink to="/foire-aux-questions">FAQ</RouterLink></li>
-
-        <a href="#section-contact">à Propos & Contact</a>
-
-        <!-- <li>
-          <RouterLink to="section-contact">à Propos & Contact</RouterLink>
-        </li> -->
+        <li><a href="/#section-contact">à Propos & Contact</a></li>
       </ul>
     </nav>
 
