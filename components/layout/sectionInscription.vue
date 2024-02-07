@@ -5,7 +5,7 @@
     <div class="section_inscription-image">
       <div class="section_inscription-image_joueur">
         <h3 class="bleu">Comme Joueur</h3>
-        <p>et participe au tournois.</p>
+        <p>et participe au tournoi.</p>
         <myButton
           class="section_inscription-bouton"
           lien="https://tournois.smash-arena-event.fr"
@@ -20,7 +20,7 @@
 
       <div class="section_inscription-image_benevole">
         <h3 class="bleu">Comme Bénévole</h3>
-        <p>et viens nous aider à géré l'évènement.</p>
+        <p>et viens nous aider à gérer l'évènement.</p>
         <myButton
           class="section_inscription-bouton"
           lien="https://form.jotform.com/240052447803046"
