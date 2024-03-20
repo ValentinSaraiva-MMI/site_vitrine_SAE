@@ -51,6 +51,8 @@
 
     &_section{
         padding: $m-medium 0;
+        max-width: $xl;
+        margin: auto;
 
         &-titre{
             strong{
@@ -92,7 +94,7 @@
         @include medium{
             padding: $m-big 0;
 
-            &-liste{
+            &-liste{            
                 &-item{
                     border-radius: 10px;
                     padding: $m-medium;
